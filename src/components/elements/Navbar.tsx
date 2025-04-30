@@ -2,6 +2,7 @@ import Container from "../shared/Container";
 import logo from "../../assets/icon.svg";
 import NavItem from "../shared/NavItem";
 import BtnLink from "../shared/BtnLink";
+import { useThemeStore } from "../../store/ThemeStore";
 
 const navItems = [
     { href: "#", text: "Home" },
@@ -11,6 +12,8 @@ const navItems = [
 ];
 
 export default function Navbar() {
+    const { toggleTheme, theme } = useThemeStore();
+
     return (
         <header className="absolute inset-x-0 top-0 z-50 py-6">
             <Container>
