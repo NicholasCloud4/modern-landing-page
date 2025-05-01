@@ -5,6 +5,7 @@ function App() {
     return (
         <Layout title="LaunchBase">
             <Hero />
+            {/* <Brands /> */}
         </Layout>
     );
 }
