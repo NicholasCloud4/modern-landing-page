@@ -4,14 +4,14 @@ import NavItem from "../shared/NavItem";
 import BtnLink from "../shared/BtnLink";
 import { useThemeStore } from "../../store/ThemeStore";
 
-const navItems = [
+export const navItems = [
     { href: "#", text: "Home" },
     { href: "#services", text: "Services" },
     { href: "#pricing", text: "Pricing" },
     { href: "#about-us", text: "About Us" },
 ];
 
-export default function Navbar() {
+export const Navbar = function () {
     const { toggleTheme, theme } = useThemeStore();
 
     return (
@@ -110,4 +110,4 @@ export default function Navbar() {
             </Container>
         </header>
     );
-}
+};
